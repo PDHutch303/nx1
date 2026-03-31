@@ -988,6 +988,72 @@ section {
   .pricing-tier { padding: 28px 20px; }
 }
 
+/* ---- PRICING TEASER ---- */
+.pricing-teaser {
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.pricing-teaser-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.pricing-teaser-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  transition: all var(--transition);
+}
+.pricing-teaser-card:hover {
+  border-color: rgba(0,102,255,0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+
+.pricing-teaser-bundle {
+  border-color: var(--blue);
+  background: linear-gradient(145deg, rgba(0,102,255,0.08), rgba(0,102,255,0.02));
+}
+
+.pricing-teaser-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.pricing-teaser-card h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.pricing-teaser-price {
+  font-size: 16px;
+  color: var(--gray-300);
+  margin-bottom: 8px;
+}
+
+.pricing-teaser-price strong {
+  font-size: 22px;
+  color: var(--white);
+  font-weight: 900;
+}
+
+.pricing-teaser-desc {
+  font-size: 14px;
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .pricing-teaser-grid { grid-template-columns: 1fr; max-width: 380px; margin: 0 auto; }
+}
+
 /* ---- SMOOTH PAGE LOAD ---- */
 body { animation: pageLoad 0.4s ease-out; }
 @keyframes pageLoad {
